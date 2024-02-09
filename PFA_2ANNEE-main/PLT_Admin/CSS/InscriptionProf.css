@@ -1,0 +1,238 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+}
+:root{
+    /* ===== Colors ===== */
+    --body-color: #E4E9F7;
+    --sidebar-color: #FFF;
+    --primary-color: #695CFE;
+    --primary-color-light: #F6F5FF;
+    --toggle-color: #DDD;
+    --text-color: #707070;
+
+    --color-bg:#1f2641;
+    --color-bg1:#2e3267;
+    --color-bg2:#424890;
+    --color-primary:#6c63ff;
+    --color-danger:#f75842;
+    --color-danger:#f75842;
+    --color-dangerH:#fa4e;
+    --color-succes:#41f1b6;
+    --color-waring:#ffbb55;
+    --color-white:#fff;
+    --color-info-dark:#7d8da1;
+    --color-info-light:#dce1eb;
+    --color-dark:#363949;
+    --color-light:rgba(132,139,200,0.18);
+    --color-primary-variant:#111e83;
+    --color-dark-variant:#677483;
+    --color-background:#f6f6f9;
+
+    /* ====== Transition ====== */
+    --tran-03: all 0.2s ease;
+    --tran-03: all 0.3s ease;
+    --tran-04: all 0.3s ease;
+    --tran-05: all 0.3s ease;
+}
+.home1{
+    display: grid;
+    grid-template-columns: 50rem auto;
+}
+.container1{
+    box-shadow: 0 5px 25px rgb(1 1 1 / 15%);
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    gap: 10px;
+    position: relative;
+    left: 10rem;
+}
+.container1 .title1{
+    padding: 20px;
+}
+.container1 .title1 h3{
+    color: var(--color-bg2);
+    font-size: 2rem;
+    font-weight: 600;
+}
+.container1 .title1 hr{
+    height: 8px;
+    background-color: var(--color-bg2);
+    border: none;
+    width: 270px;
+    border-top-right-radius: 10px;
+}
+
+.container1 form{
+    box-shadow: 1 5px 25px rgb(1 1 1 / 15%);
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    gap: 10px;
+    padding: 40px 100px;
+}
+.container1 form .box{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 40px;
+    padding: 10px;
+}
+.container1 form .box .a input{
+    height: 40px;
+    border: none;
+    border-radius: 5px;
+}
+.container1 form .box .a label{
+    color: var(--color-bg);
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+.container1 form .box .a label span{
+    color: var(--color-danger);
+    margin-left: 2px;
+}
+
+.container1 form .box1{
+    display: flex;
+    padding: 10px;
+}
+.container1 form .box1 .b1 label{
+    color: var(--color-bg);
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+.container1 form .box1 .b1 label span{
+    color: var(--color-danger);
+    margin-left: 2px;
+}
+.container1 form .box1 select{
+    height: 40px;
+    border: none;
+    border-radius: 5px;
+    width: 17rem;
+    outline: none;
+
+}
+.container1 form .box2{
+    display: flex;
+    padding: 10px;
+}
+.container1 form .box2 label{
+    color: var(--color-bg);
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+.container1 form .box2 label span{
+    color: var(--color-danger);
+    margin-left: 2px;
+}
+.container1 form .box2 input,select{
+    height: 40px;
+    border: none;
+    border-radius: 5px;
+    width: 17rem;
+    outline: none;
+}
+
+.container1 form .box3{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 40px;
+    padding: 10px;
+} 
+.container1 form .box3 input[type="submit"]{
+    background-color:var(--color-primary);
+    font-size: 1.2rem;
+    color: var(--body-color);
+    cursor: pointer;
+} 
+.container1 form .box3 input[type="reset"]{
+    background-color:var(--color-danger);
+    font-size: 1.2rem;
+    color: var(--body-color);
+    cursor: pointer; 
+} 
+.container1 form .box3 label{
+    color: var(--color-bg);
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+.container1 form .box3 label span{
+    color: var(--color-danger);
+    margin-left: 2px;
+}
+.container1 form .box3 select,input{
+    height: 40px;
+    border: none;
+    border-radius: 5px;
+    width: 17rem;
+    outline: none;
+}
+.container1 form .box4{
+    /* display: flex;
+    flex-direction: column; */
+    margin-left: 20px;
+} 
+.container1 form .box4 label{
+    color: var(--color-bg);
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+.container1 form .box4 label span{
+    color: var(--color-danger);
+    margin-left: 2px;
+}
+
+.container1 form .box4 input{
+    width: 22rem;
+    color: var(--color-bg);
+    font-size: 1.1rem;
+}
+.container1 form .label{
+    color: var(--color-bg);
+    font-size: 1.1rem;
+    font-weight: 500;
+    margin-left: 20px;
+}
+.container1 form .label span{
+    color: var(--color-danger);
+    margin-left: 2px;
+}
+
+.container1 form .check{
+    display: grid;grid-template-columns: 100px 100px 100px;
+    margin-left: 30px;
+}
+.container1 form .check .radio1{
+    display: grid;grid-template-columns: 25px 25px 25px;
+}
+.container1 form .check .radio1 input{
+    width: 25px;
+}
+.container1 form .check .radio1 label{
+    margin-top: 7px;
+    font-size: 19px;
+    color: var(--color-bg2);
+}
+
+
+
+
+
+.container1 .c{
+    box-shadow: 0 5px 25px rgb(1 1 1 / 15%);
+    height: 100px;
+
+}
+
+
+
+body.dark  .container1 {
+    background-color:var(--color-info-light) ;
+    position: relative;
+    left: 10rem;
+} 

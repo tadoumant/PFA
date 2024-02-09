@@ -1,0 +1,157 @@
+*{
+    box-sizing: border-box;
+    padding: 0;margin: 0;
+    font-family:Arial, Helvetica, sans-serif;
+    text-decoration: none;list-style: none;
+    user-select: none; 
+}
+:root{
+    --color-bg:#1f2641;
+    --color-bg1:#2e3267;
+    --color-bg2:#424890;
+    --color-primary:#6c63ff;
+    --color-danger:#f75842;
+    --color-danger:#f75842;
+    --color-dangerH:#fa4e38;
+
+    --color-successs:#00bf8e;
+    --color-successsH:#00eca5;
+}
+
+footer{
+    border-top: 1px solid var(--color-primary);
+
+}
+#header2 {
+    position: relative;
+    /* top: 5rem; */
+}
+#header2 h3{
+    color: var(--color-bg2);
+    text-align: center;
+    font-size: 4rem;
+    font-weight: bolder;
+    padding: 80px 100px;
+    height: 20vh;
+    transform: scale(0);
+    animation: scale 3s forwards cubic-bezier(0.5, 1, 0.89, 1);
+    background-color: rgba(255, 255, 255, 0.404);
+}
+@keyframes scale {100% {transform: scale(1);}}
+#intro{
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    background-color: var(--color-bg);
+    height: auto;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 100px;
+}
+#intro .box1{
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    gap: 20px;
+}
+#intro .box1 h3{
+    color: white;
+    font-size: 1.8rem;
+    font-weight: bolder;
+}
+#intro .box1  p{
+    font-size: 1.1rem;
+    color: rgba(255, 255, 255, 0.911);
+}
+#intro .box2{
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    margin-top: 40px;
+
+}
+#intro .box2 h2{
+    color: white;
+    font-size: 1.8rem;
+    font-weight: bolder;
+    text-align: center;
+}
+#intro .box2  ul{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    padding: 20px;
+    gap: 30px;
+    margin-top: 40px;
+}
+#intro .box2  ul li{
+    padding: 20px;
+    background-color: var(--color-primary);
+    cursor: pointer;
+    border-radius: 5px ;
+    position: relative; 
+    transition:transform 1s ease ;
+ 
+}
+#intro .box2  ul li:hover{
+    transform: scale(1.1);
+    background-color: var(--color-bg2);
+}
+#intro .box2  ul li:hover > a i{
+    color: var(--color-successsH);
+}
+#intro .box2  ul li a{
+    color: white;
+    
+}
+#intro .box2  ul li a i{
+    position: absolute;
+    right: 0;
+    margin-right: 10px;
+    font-size: 1.4rem;
+}
+
+
+
+#intro .box3{
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    margin-top: 40px;
+
+}
+#intro .box3 h2{
+    color: white;
+    font-size: 1.8rem;
+    font-weight: bolder;
+    text-align: center;
+}
+#intro .box3  ul{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    padding: 20px;
+    gap: 30px;
+    margin-top: 40px;
+}
+#intro .box3  ul li{
+    padding: 20px;
+    background-color: var(--color-primary);
+    cursor: pointer;
+    border-radius: 5px ;
+    position: relative; 
+    transition:transform 1s ease ;
+ 
+}
+#intro .box3  ul li:hover{
+    transform: scale(1.1);
+    background-color: var(--color-bg2);
+}
+#intro .box3  ul li:hover > a i{
+    color: var(--color-successsH);
+}
+#intro .box3  ul li a{
+    color: white;
+    
+}
+#intro .box3  ul li a i{
+    position: absolute;
+    right: 0;
+    margin-right: 10px;
+    font-size: 1.4rem;
+}

@@ -1,0 +1,73 @@
+:root{
+    /* ===== Colors ===== */
+    --body-color: #E4E9F7;
+    --sidebar-color: #FFF;
+    --primary-color: #695CFE;
+    --primary-color-light: #F6F5FF;
+    --toggle-color: #DDD;
+    --text-color: #707070;
+
+    --color-bg:#1f2641;
+    --color-bg1:#2e3267;
+    --color-bg2:#424890;
+    --color-primary:#6c63ff;
+
+    --color-danger:#ff7792;
+    --color-succes:#41f1b6;
+    --color-waring:#ffbb55;
+    --color-white:#fff;
+    --color-info-dark:#7d8da1;
+    --color-info-light:#dce1eb;
+    --color-dark:#363949;
+    --color-light:rgba(132,139,200,0.18);
+    --color-primary-variant:#111e83;
+    --color-dark-variant:#677483;
+    --color-background:#f6f6f9;
+
+    /* ====== Transition ====== */
+    --tran-03: all 0.2s ease;
+    --tran-03: all 0.3s ease;
+    --tran-04: all 0.3s ease;
+    --tran-05: all 0.3s ease;
+}
+.home6{
+    grid-template-columns: repeat(1,auto);
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+.home6  .contant h1{
+    font-size: 2rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: var(--color-dark);
+}
+.home6 .contant{
+    margin: 60px 100px; 
+    display: grid;
+    grid-template-columns: repeat(1,auto);
+}  
+.home6 .contant{
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20rem;
+}
+
+.home6 .contant  form{
+    padding: 40px;
+    box-shadow: 0 5px 25px rgb(1 1 1 / 15%);
+}
+.home6 .contant  form input[type='file']{
+        border: none;
+}
+.home6 .contant form input[type='submit']{
+    width: 12rem;
+    background-color: var(--color-bg);
+    color: #fff;
+    cursor: pointer;
+
+}   

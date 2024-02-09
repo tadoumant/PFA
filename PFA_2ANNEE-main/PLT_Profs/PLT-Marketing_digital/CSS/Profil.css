@@ -1,0 +1,182 @@
+:root{
+    /* ===== Colors ===== */
+    --body-color: #E4E9F7;
+    --sidebar-color: #FFF;
+    --primary-color: #695CFE;
+    --primary-color-light: #F6F5FF;
+    --toggle-color: #DDD;
+    --text-color: #707070;
+
+    --color-bg:#1f2641;
+    --color-bg1:#2e3267;
+    --color-bg2:#424890;
+    --color-primary:#6c63ff;
+
+    --color-danger:#ff7792;
+    --color-succes:#41f1b6;
+    --color-waring:#ffbb55;
+    --color-white:#fff;
+    --color-info-dark:#7d8da1;
+    --color-info-light:#dce1eb;
+    --color-dark:#363949;
+    --color-light:rgba(132,139,200,0.18);
+    --color-primary-variant:#111e83;
+    --color-dark-variant:#677483;
+    --color-background:#f6f6f9;
+
+    /* ====== Transition ====== */
+    --tran-03: all 0.2s ease;
+    --tran-03: all 0.3s ease;
+    --tran-04: all 0.3s ease;
+    --tran-05: all 0.3s ease;
+}
+.home2{
+    padding: 40px;
+    display: grid;
+    grid-template-columns: auto 400px;
+    gap: 20px;
+
+}
+.Info-g{
+    display: grid;
+    grid-template-columns: repeat(1,auto);
+    gap: 20px;
+    height: 100vh;
+
+}
+.title-g{
+    font-size: 20px;
+    font-weight: 500;
+    color: var(--color-dark-variant);
+    text-align: left;
+}
+/* Informations détaillées */
+.Info{
+    box-shadow: 0 5px 25px rgb(1 1 1 / 15%);
+    padding: 30px;
+    border-radius: 9px;
+    display: grid;
+    grid-template-columns: repeat(1,auto);
+}
+.Info .box-top{
+    display: grid;
+    grid-template-columns: repeat(1,auto); 
+}
+.Info .box-top .mini-box1{
+    box-shadow: 0 5px 25px rgb(1 1 1 / 15%);
+    display: grid;
+    grid-template-columns: repeat(2,auto);
+    padding: 30px;
+}
+.Info .box-top .mini-box1 img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    box-shadow: 0 5px 25px rgb(1 1 1 / 15%);
+}
+.Info .box-top .mini-box1 .box-formation{
+    display: grid;
+    grid-template-columns: repeat(1,auto);
+    gap: 10px;
+}
+.Info .box-top .mini-box1 .box-formation h4{
+    color: var(--color-dark);
+    font-size: 17px;
+    font-weight: bolder;
+}
+.Info .box-top .mini-box2{
+    display: grid;
+    grid-template-columns: repeat(1,auto);
+    gap: 6px;
+    padding-left: 30px;
+    padding-top: 30px;
+}
+.Info .box-top .mini-box2 h4{
+    color: var(--color-dark);
+    font-size: 17px;
+    font-weight: bolder;
+}
+/* END Informations détaillées */
+/* Informations de connexion */
+.connexion {
+    display: grid;
+    grid-template-columns: repeat(1,auto);
+    gap: 10px;
+    box-shadow: 0 5px 25px rgb(1 1 1 / 15%);
+    padding: 30px;
+    border-radius: 9px;
+}
+
+.connexion .box-connexion{
+    margin-left: 30px;
+    display: grid;
+    grid-template-columns: repeat(1,auto);
+    gap: 10px;
+}
+.connexion .box-connexion h3{
+    color: var(--color-dark);
+    font-size: 17px;
+    font-weight: bolder;
+}
+.connexion .box-connexion p{
+    color: var(--color-info-dark);
+    margin-left: 30px;
+    font-weight: 400;
+}
+/* END Informations de connexion */
+/* Informations détaillées du cours */
+.cours{
+    box-shadow: 0 5px 25px rgb(1 1 1 / 15%);
+    padding: 30px;
+    border-radius: 9px;
+}
+.cours .box-cours{
+    display: grid;
+    grid-template-columns: repeat(1,auto);
+    gap: 30px;
+}
+.cours .box-cours h4{
+    color: var(--color-dark);
+    font-size: 17px;
+    font-weight: bolder;
+    margin-top: 20px;
+    margin-left: 5px;
+}
+.cours .box-cours .cour{
+    display: grid;
+    grid-template-columns: repeat(1,auto);
+    gap: 5px;
+}
+.cours .box-cours .cour a{
+    color: var(--color-bg2);
+    font-size: 10px;
+    font-weight: bolder;
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+.cours .box-cours .cour a:hover{
+    color: var(--primary-color);
+}
+/* END Informations détaillées du cours */
+body.dark .home2 .title-g{
+    color: white;
+}
+body.dark .home2 .Info .box-top .mini-box1 .box-formation h4{
+    color: rgba(255, 255, 255, 0.817);
+} 
+body.dark  .connexion .box-connexion h3{
+    color: rgba(255, 255, 255, 0.817);
+}
+body.dark .Info .box-top .mini-box2 h4{
+    color: rgba(255, 255, 255, 0.817);
+}
+body.dark  .cours .box-cours h4{
+    color: rgba(255, 255, 255, 0.817);
+}
+body.dark  .cours .box-cours .cour a {
+    color: var(--color-info-dark);
+}
+body.dark  .cours .box-cours .cour a:hover{
+color: var(--primary-color);
+}
+

@@ -1,0 +1,79 @@
+:root{
+    /* ===== Colors ===== */
+    --body-color: #E4E9F7;
+    --sidebar-color: #FFF;
+    --primary-color: #695CFE;
+    --primary-color-light: #F6F5FF;
+    --toggle-color: #DDD;
+    --text-color: #707070;
+
+    --color-bg:#1f2641;
+    --color-bg1:#2e3267;
+    --color-bg2:#424890;
+    --color-primary:#6c63ff;
+
+    --color-danger:#ff7792;
+    --color-succes:#41f1b6;
+    --color-waring:#ffbb55;
+    --color-white:#fff;
+    --color-info-dark:#7d8da1;
+    --color-info-light:#dce1eb;
+    --color-dark:#363949;
+    --color-light:rgba(132,139,200,0.18);
+    --color-primary-variant:#111e83;
+    --color-dark-variant:#677483;
+    --color-background:#f6f6f9;
+
+    /* ====== Transition ====== */
+    --tran-03: all 0.2s ease;
+    --tran-03: all 0.3s ease;
+    --tran-04: all 0.3s ease;
+    --tran-05: all 0.3s ease;
+}
+.home4{
+    grid-template-columns: repeat(1,auto);
+    text-align: center;
+    position: relative;
+    left: 166px;
+}
+.home4 .contant{
+    margin: 60px 100px; 
+    box-shadow: 0 5px 25px rgb(1 1 1 / 15%);
+    display: grid;
+    grid-template-columns: repeat(1,auto);
+}
+.home4 .contant h3{
+    font-size:2rem;
+    color: var(--color-dark);
+    word-spacing: 10px;
+    text-align: left;
+    padding: 10px;
+}
+/* .home4 .contant  table{
+    text-align: center;
+    padding: 20px;
+} */
+/* .home4 .contant  .table2{
+    background-color: red;
+    height: 10rem;
+} */
+.home4 .contant  table tr{
+    border: 1px solid ;
+    box-shadow: 0 5px 25px rgb(1 1 1 / 15%);
+
+}
+.home4 .contant  table tr th,td{
+    padding: 15px 0;
+    padding-left: 20px;
+    /* font-size: 12px; */
+
+
+}
+
+.home4 .contant  table tr td a{
+    color: var(--color-danger);
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+

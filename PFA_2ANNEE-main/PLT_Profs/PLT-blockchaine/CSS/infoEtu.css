@@ -1,0 +1,175 @@
+:root{
+  /* ===== Colors ===== */
+  ---color: #E4E9F7;
+  --sidebar-color: #FFF;
+  --primary-color: #695CFE;
+  --primary-color-light: #F6F5FF;
+  --toggle-color: #DDD;
+  --text-color: #707070;
+
+  --color-bg:#1f2641;
+  --color-bg1:#2e3267;
+  --color-bg2:#424890;
+  --color-primary:#6c63ff;
+
+  --color-danger:#ff7792;
+  --color-succes:#31ad84;
+  --color-waring:#ffbb55;
+  --color-white:#fff;
+  --color-info-dark:#7d8da1;
+  --color-info-light:#dce1eb;
+  --color-dark:#363949;
+  --color-light:rgba(132,139,200,0.18);
+  --color-primary-variant:#111e83;
+  --color-dark-variant:#677483;
+  --color-background:#f6f6f9;
+
+  /* ====== Transition ====== */
+  --tran-03: all 0.2s ease;
+  --tran-03: all 0.3s ease;
+  --tran-04: all 0.3s ease;
+  --tran-05: all 0.3s ease;
+}
+.input{
+  width: 229px;
+  display: flex;
+  gap: 10px;
+}
+.input input{
+  width: 100px;
+  height: auto;
+  padding: 8px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+
+}
+.input .Update{
+  color: var(--color-succes);
+  border: none;
+  background-color: transparent;
+} 
+.input  .Delet{
+  color: rgb(242, 68, 68);
+  border: none;
+  background-color: transparent;
+
+}
+.home4 .contant  table{
+  text-align: center;
+  padding: 0;
+  margin-top: 10px;
+
+}
+
+
+
+
+/* --------------- G  ---------------*/
+
+
+.home4 .contant{
+display: flex;
+flex-direction: column;
+}
+
+.statusActiv{
+color: green;
+}
+.statusOff{
+color: red;
+}
+.titleTable{
+background-color: #70707030;
+height: 20px;
+font-size: 15px;
+text-align: left;
+letter-spacing: 1px;
+text-transform: uppercase;
+color: #363949;
+font-weight: 400;
+
+}
+.ValueTable{
+height: auto;
+background-color: #5659750e;
+font-size: 15px;
+text-align: left;
+
+}
+
+/* --------------- Update  ---------------*/
+.content_Update{
+position: fixed;
+top: 0;left: 0;
+z-index: 2;
+height: 100%;width: 100%;
+background: rgba(0,0,0,0.4);
+
+
+}
+.box_Update{
+height: 35rem;
+width: 100%;
+max-width: 39rem;
+position: relative;
+top: 50%;
+left: 50%;
+justify-content: center;
+z-index: 3;
+transform: translate(-50%, -50%) scale(0.95);
+border-radius: 10px;
+box-shadow: 0 5px 25px rgb(1 1 1 / 15%);
+
+background-color: white;
+}
+.content_Update .box_Update .header{
+display: flex;
+justify-content: space-between;
+padding: 40px;
+border-bottom: 1px solid #ccc;
+
+}
+.content_Update .box_Update .header p{
+font-size: 1.5rem;
+font-weight: 400;
+color: var(--color-dark);
+text-transform: uppercase;
+}
+.content_Update .box_Update .header i{
+font-size: 1.7rem;
+cursor: pointer;
+color: #8b8989;
+}
+form{
+display: grid;
+grid-template-columns: repeat(1,1fr);
+gap: 10px;
+padding: 40px;
+}
+form label{
+font-size: 21px;
+margin-top: 1px;
+margin-left: 9px;
+color: var(--color-dark);
+letter-spacing: 1px;
+}
+form .Info{
+text-align: left;
+display: grid;
+grid-template-columns: repeat(1,auto);
+}
+
+form .Info select{
+width: auto;
+height: 43px;
+border: 1px solid #ccc;
+}
+form .description{
+text-align: left;
+}
+form  input{
+background-color: var(--color-bg2);
+color: #fff;
+letter-spacing: 1px;
+}

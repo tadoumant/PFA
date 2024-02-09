@@ -1,0 +1,95 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+}
+
+:root{
+    /* ===== Colors ===== */
+    --body-color: #E4E9F7;
+    --sidebar-color: #FFF;
+    --primary-color: #695CFE;
+    --primary-color-light: #F6F5FF;
+    --toggle-color: #DDD;
+    --text-color: #707070;
+
+    --color-bg:#1f2641;
+    --color-bg1:#2e3267;
+    --color-bg2:#424890;
+    --color-primary:#6c63ff;
+
+    --color-danger:#ff7792;
+    --color-succes:#41f1b6;
+    --color-waring:#ffbb55;
+    --color-white:#fff;
+    --color-info-dark:#7d8da1;
+    --color-info-light:#dce1eb;
+    --color-dark:#363949;
+    --color-light:rgba(132,139,200,0.18);
+    --color-primary-variant:#111e83;
+    --color-dark-variant:#677483;
+    --color-background:#f6f6f9;
+
+    /* ====== Transition ====== */
+    --tran-03: all 0.2s ease;
+    --tran-03: all 0.3s ease;
+    --tran-04: all 0.3s ease;
+    --tran-05: all 0.3s ease;
+}
+.sidebar.close ~ .home2{
+    left: 78px;
+    height: auto;
+    width: calc(100% - 78px);
+}
+.home2{
+    display: grid;
+    grid-template-columns: 50rem auto;
+}
+.container1{
+    display: grid;
+    grid-template-columns:46rem 23rem;
+    gap: 10px;
+    position: relative;
+    left: 10rem;
+    width: 79vw;
+    margin: 0;
+    margin: 30px;
+    height: 90vh;
+}
+.Felicitations{
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    text-align: center;
+    position: relative;
+    left: 67px;
+}
+.header2 h3{
+    color: var(--color-bg2);
+    text-align: center;
+    font-size: 4rem;
+    font-weight: bolder;
+    padding: 80px 100px;
+    height: 20vh;
+    transform: scale(0);
+    animation: scale 3s forwards cubic-bezier(0.5, 1, 0.89, 1);
+    background-color: transparent;
+}
+@keyframes scale {100% {transform: scale(1);}}
+
+.Felicitations i{
+    font-size: 200px;
+    margin-top: 50px;
+    color: green;
+}
+.Felicitations h1{
+    font-size: 30px;
+    font-weight: bold;
+    color: rgb(30, 30, 34);
+}
+
+.Felicitations .info h2{
+    font-size: 18px;
+    color: rgb(98, 98, 98);
+}

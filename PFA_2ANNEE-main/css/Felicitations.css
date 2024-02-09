@@ -1,0 +1,37 @@
+#header2 {
+    position: relative;
+    /* top: 5rem; */
+}
+#header2 h3{
+    color: var(--color-bg2);
+    text-align: center;
+    font-size: 4rem;
+    font-weight: bolder;
+    padding: 80px 100px;
+    height: 20vh;
+    transform: scale(0);
+    animation: scale 3s forwards cubic-bezier(0.5, 1, 0.89, 1);
+    background-color: rgba(255, 255, 255, 0.404);
+}
+@keyframes scale {100% {transform: scale(1);}}
+#Felicitations{
+    display: grid;
+    grid-template-columns: repeat(1,auto);
+    text-align: center;
+    height: 70vh;
+}
+#Felicitations i{
+    font-size: 200px;
+    margin-top: 50px;
+    color: green;
+}
+#Felicitations h1{
+    font-size: 30px;
+    font-weight: bold;
+    color: rgb(30, 30, 34);
+}
+
+#Felicitations .info h2{
+    font-size: 18px;
+    color: rgb(98, 98, 98);
+}

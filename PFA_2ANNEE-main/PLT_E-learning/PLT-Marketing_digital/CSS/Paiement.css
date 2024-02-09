@@ -1,0 +1,288 @@
+*{
+    box-sizing: border-box;
+    padding: 0;margin: 0;
+    font-family:Arial, Helvetica, sans-serif;
+    text-decoration: none;list-style: none;
+    user-select: none; 
+}
+
+.sidebar.close ~ .home {
+    left: 1rem;
+    width: calc(100% - 78px);
+}
+:root{
+    --color-bg:#1f2641;
+    --color-bg1:#2e3267;
+    --color-bg2:#424890;
+    --color-primary:#6c63ff;
+    --color-danger:#f75842;
+    --color-dangerH:#fa4e38;
+
+    --color-successs:#00bf8e;
+    --color-successsH:#00eca5;
+}
+.home2{
+    grid-template-columns: repeat(1,auto);
+    /* text-align: center; */
+    /* background-color: var(--color-bg); */
+    height: 100vh;
+    width: 100%;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+.home2 form{
+    box-shadow: 0 5px 25px rgb(1 1 1 / 15%);
+    /* padding: 50px; */
+    border-radius: 10px;
+
+    margin: 100px 200px;
+    padding: 40px;
+
+}
+
+/* LOGO */
+.home2 form .logo{
+    text-align: center;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+}
+.home2  form .logo i{
+    font-size: 60px;
+    color: #fff;
+    margin-right: 6px;
+}
+.home2  form .logo span{
+    font-size: 60px;
+    font-weight: 800;
+    color:var(--color-primary);
+}
+/* END LOGO */
+.home2  form h4{
+    color: var(--color-primary);
+    font-size: 24px;
+    font-weight: bolder;
+    margin-bottom: 20px;
+    text-align: center;
+} 
+.home2  form  hr{
+    margin: auto;
+    width: 100px;
+    height: 10px;
+    background-color: var(--color-primary);
+    border: none;
+    margin-bottom: 20px;
+}
+.home2  form  .container2{
+    box-shadow: 0 5px 25px rgb(1 1 1 / 15%);
+    display: grid;
+    grid-template-columns: repeat(1,auto);
+}
+
+.home2  form  .container2 .box-name{
+    display: grid;
+    grid-template-columns: repeat(2,auto);
+    gap: 20px;
+    padding: 20px;
+}
+.home2  form  .container2 .box-name label{
+    color: var(--color-bg);
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+}
+.home2  form  .container2 .box-name label span{
+    color: var(--color-dangerH);
+}
+.home2  form  .container2 .box-name input{
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    padding: 11px;
+    padding-right: 80px;
+}
+.home2  form  .container2 .box-name .prenom{
+    display: grid;
+    grid-template-columns: repeat(1,auto);
+}
+.home2  form  .container2 .box-name .nom{
+    display: grid;
+    grid-template-columns: repeat(1,auto);
+}
+
+
+.home2  form  .container2  .box-numero{
+    display: grid;
+    grid-template-columns: repeat(2,auto);
+    padding: 20px;
+}
+.home2  form  .container2  .box-numero .number_card{
+    display: grid;
+    grid-template-columns: repeat(1,auto);
+}
+.home2  form  .container2  .box-numero .number_card label{
+    color: var(--color-bg);
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+}
+.home2  form  .container2  .box-numero .number_card label span{
+    color: var(--color-dangerH);
+}
+.home2  form  .container2  .box-numero .number_card  .input_number{
+    display: flex;
+}
+
+.container2  .box-numero .number_card  .input_number input{
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    padding: 11px;
+    width: 19rem;
+    position: relative;
+    z-index: 0;
+}
+.container2  .box-numero .number_card  .input_number i{
+    position: relative;
+    font-size: 2rem;
+    /* left: 45.6rem; */
+    right: 3rem;
+    top: 5px;
+    z-index: 11;
+    color: var(--color-bg);
+    border-bottom-right-radius: 5px;
+    border-top-right-radius: 5px;
+    cursor: pointer;
+    height: 10px;
+    transition:background-color 2s ease ;
+
+}
+/* .container2  .box-numero .number_card  .input_number i:hover{
+} */
+.container2  .box-numero .date{
+    display: grid;
+    grid-template-columns: repeat(1,auto);
+}
+.container2  .box-numero .date label{
+    color: var(--color-bg);
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+}
+.container2  .box-numero .date label span{
+    color: var(--color-dangerH);
+
+}
+.container2  .box-numero .date  input{
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    padding: 11px;
+}
+.container2  .CVV{
+    display: grid;
+    grid-template-columns: repeat(1,auto);
+    padding: 20px;
+}
+.container2  .CVV label{
+    color: var(--color-bg);
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+}
+.container2  .CVV label span{
+    color: var(--color-dangerH);
+}
+.container2  .CVV .number-cvv{
+    display: flex;
+}
+.container2  .CVV .number-cvv input{
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    padding: 11px;
+    position: relative;
+    z-index: 0;
+    width: 120px;
+}
+.container2  .CVV .number-cvv i{
+    position: relative;
+    font-size: 2rem;
+    right: 3rem;
+    top: 5px;
+
+    z-index: 11;
+    /* background-color: var(--color-bg2); */
+    color: var(--color-bg);
+    border-bottom-right-radius: 5px;
+    border-top-right-radius: 5px;
+    cursor: pointer;
+    transition:background-color 2s ease ;
+}
+.container2  .CVV .number-cvv i:hover{
+    background-color: #6c63ff;
+}
+.container2  .submit{
+    display: grid;
+    grid-template-columns: repeat(1,auto);
+    padding: 20px;
+
+}
+.container2  .submit input{
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    padding: 11px;
+    color: white;
+    background-color: var(--color-bg2);
+    cursor: pointer;
+    font-size: 1.1rem;
+    transition:background-color 2s ease ;
+}
+.container2  .submit input:hover{
+    background-color: #6c63ff;
+}
+.container2  .suport{
+    display: grid;
+    grid-template-columns: repeat(1,auto);
+    margin-top: 30px;
+}
+.container2  .suport label{
+    color: var(--color-bg);
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+    text-align: left;
+}
+.container2  .suport .img{
+    display: grid;
+    grid-template-columns: repeat(7,auto);
+    width: 510px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.container2  .suport .img img{
+    width: 40px;
+    cursor: pointer;
+    margin-left: 10px;
+    transition: transform 2s ease;
+}
+.container2  .suport .img img:hover{
+    transform: scale(1.2);
+}
+
+.container2 .payer{
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    gap: 10px;
+    padding: 20px;
+}
+.container2 .payer label{
+    color: var(--color-bg);
+    font-size: 1.1rem;
+}
+.container2 .payer select{
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    padding: 11px;
+    width: 100px;
+}

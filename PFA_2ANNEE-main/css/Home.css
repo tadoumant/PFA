@@ -1,0 +1,339 @@
+*{
+    box-sizing: border-box;
+    padding: 0;margin: 0;
+    font-family:Arial, Helvetica, sans-serif;
+    text-decoration: none;list-style: none;
+    user-select: none;
+  }
+:root{
+    --color-bg:#1f2641;
+    --color-bg1:#2e3267;
+    --color-bg2:#424890;
+    --color-primary:#6c63ff;
+}
+/* ============================ HOME1 ============================*/
+#Home1{
+    background-color:var(--color-bg);
+    height: 100vh;
+    clip-path: polygon(0 0 ,100% 0 , 100% 100% , 70% 80% , 0 100%);
+    display: grid;
+    grid-template-columns:repeat(2,auto) ;
+    align-items: center;
+    justify-content: space-between;
+    gap: 100px;
+    padding: 100px 200px;
+}
+#Home1 .img img{
+    cursor: pointer;
+    transition:transform 2s ease ;
+}
+#Home1 .img img:hover{transform: scale(1.2);}
+#Home1 .about h1{
+    text-transform: uppercase;
+    font-size: 2rem;font-weight: bold;
+    text-shadow: 0 0 4px black;
+    text-align: center;
+    position: relative;
+    bottom: 50px;
+    color: white;
+}
+#Home1 .about h1 span{color: var(--color-primary);}
+#Home1 .btn a{
+    border-radius: 20px;
+    background-color: transparent;
+    border: 2px solid white;
+    color: white;
+    padding: 15px 100px ;
+    font-size: 1rem;
+    font-weight: bold;
+}
+#Home1 .btn a:hover{
+    background-color: var(--color-bg2);
+    border: 2px solid var(--color-bg2);
+    color: white;
+}
+/* ============================ HOME2 ============================*/
+#Home2 .part1{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+#Home2 .part1 h3{
+    font-size: 1rem;
+    font-weight: bolder;
+    padding: 15px 50px;
+    letter-spacing: 1px;
+}
+#Home2 .part1 a{
+    background-color: var(--color-bg2);
+    border: 1px solid var(--color-bg2);
+    color: #fff;
+    padding: 15px 50px;
+    border-radius: 20px;
+    font-weight: bolder;
+    font-size: 1rem;
+}
+#Home2 .part1 a:hover{
+    color: var(--color-bg2);
+    background-color: transparent;
+    border: 1px solid var(--color-bg2);
+}
+#Home2 .part2{
+    display: flex;
+    justify-content: center;
+    background-color: var(--color-bg2);
+    margin: 40px 0px;
+    align-items: center;
+}
+#Home2 .part2 .card{
+    display: flex;
+    gap: 30px;
+    padding: 20px 40px;
+}
+#Home2 .part2 .card i{
+    font-size: 50px;
+    color: var(--color-bg);
+}
+#Home2 .part2 .card h3{color: #fff;}
+/* ============================ CAT ============================*/
+#categories{
+    padding: 40px;
+    display: grid;
+    grid-template-columns: 40% 60%;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+#categories .categories-left {line-height: 2;}
+#categories .categories-left h1{
+    color: var(--color-primary);
+    text-transform: uppercase;   
+    font-size: 2rem;font-weight: bold;
+}
+#categories .categories-left p{
+    color: rgb(59, 56, 56);
+    margin-bottom: 20px;
+    font-size: 0.9rem;
+    margin-left: 10px;
+}
+#categories .categories-left a{
+    background-color: rgb(59, 56, 56);
+    border: 1px solid transparent;
+    padding: 15px 40px ;
+    border-radius: 10px;
+    color: #fff;
+}
+#categories .categories-left a:hover{background-color:var(--color-bg2);}
+#categories .categories-right{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 1rem;
+}
+#categories .categories-right .category{
+    padding: 30px 20px;
+    border-radius: 1rem;
+    background-color:var(--color-bg1);
+    cursor: pointer;    
+    box-shadow:inset 0rem 1rem 20rem 18px rgb(0 0 0 / 30%);
+}
+#categories .categories-right .category:hover{box-shadow: 1rem 3rem 4rem rgba(0, 0, 0, 0.3);}
+#categories .categories-right .category .category-icon i{
+    font-size: 3rem;
+    margin-bottom: 30px;
+    color: var(--color-primary);
+}
+#categories .categories-right .category h5{
+    color: #fff;
+    font-size: 1.4rem;
+    margin-bottom: 20px;
+}
+#categories .categories-right .category p{
+    color: #fff;
+    margin-left: 10px;
+}
+/* ============================ FAQS ============================*/
+#faqs{margin-top: 100px;}
+.faqs_container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 0 100px;
+    gap: 10px;
+}
+.faq{
+    padding: 2rem;
+    display: flex;
+    align-items: center;
+    gap: 1.4rem;
+    height: fit-content;
+    background-color:var(--color-bg1);
+    box-shadow:inset 0rem 1rem 20rem 18px rgb(0 0 0 / 30%);
+    cursor: pointer;
+    border-radius: 2rem;
+}
+.faq:hover{
+    box-shadow: 1rem 3rem 4rem rgba(0, 0, 0, 0.3);
+}
+.faq h4{
+    font-size: 1rem;
+    line-height: 2.2;
+    color: white;
+}
+.faq_icon{
+    align-self: flex-start;
+    font-size: 1.8rem;
+    color: var(--color-primary);
+}
+.faq p{
+    margin: 0.8rem;
+    display: none;
+    color: rgba(255, 255, 255, 0.445);
+}
+.open p{display: block;}
+/* ============================ TABLE-0 ============================ */
+#table{margin-top: 10vh;}
+#table .title h1{
+    text-transform: uppercase;
+    font-weight: 800;
+    font-size: 2rem;
+    margin-bottom: 50px;
+    text-align: center;
+    color: var(--color-primary);
+}
+#table .card{
+    display: grid;
+    grid-template-columns: repeat(4,auto);
+    padding: 40px;
+    gap: 20px;
+    margin: 50px 220px;
+    border-bottom: 1px solid;
+}
+#table .card .crd{
+    border-radius: 20px;
+    padding: 40px ;
+    cursor: pointer;
+    background-color:var(--color-bg2);
+    box-shadow: 0 0 11px 2px black;
+    cursor: pointer;
+    text-align: center;
+    transition:transform 1s ease ;
+    transition:box-shadow 1s ease ;
+}
+#table .card .crd:hover{
+    box-shadow: 1rem 3rem 4rem rgba(0, 0, 0, 0.3);
+    transform: scale(1.1);
+}
+#table .card .crd i{
+    font-size: 70px;
+    color: var(--color-bg);
+    margin-bottom: 20px;
+}
+#table .card .crd h3{
+    color: var(--color-bg);
+    font-weight: bolder;
+    font-size: 25px;
+    letter-spacing: 1px;
+}
+#table .card .crd p{
+    margin-top: 20px;
+    font-size: 1rem;
+    font-weight: 300;
+    color: rgba(255, 255, 255, 0.404);
+}
+/* ============================ TABLE-1 ============================ */
+#table1 .title h1{
+    margin-bottom: 50px;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 800;
+    font-size: 2rem;
+    color: var(--color-primary);
+}
+#table1 .card{
+    display: grid;
+    grid-template-columns: repeat(4,auto);
+    padding: 40px;
+    gap: 20px;
+    margin: 50px 220px;
+    border-bottom: 1px solid;  
+}
+#table1 .card .crd{
+    border-radius: 20px;
+    padding: 40px ;
+    cursor: pointer;
+    background-color:var(--color-bg2);
+    box-shadow: 0 0 11px 2px black;
+    cursor: pointer;
+    text-align: center;
+    transition:transform 1s ease ;
+    transition:box-shadow 1s ease ;
+}
+#table1 .card .crd:hover{
+    box-shadow: 1rem 3rem 4rem rgba(0, 0, 0, 0.3);
+    transform: scale(1.1);
+}
+#table1 .card .crd i{
+    font-size: 70px;
+    color: rgb(30, 30, 34);
+    margin-bottom: 20px;
+}
+#table1 .card .crd h3{
+    color: rgb(30, 30, 34);
+    font-weight: bolder;
+    font-size: 25px;
+    letter-spacing: 1px;
+}
+#table1 .card .crd p{
+    margin-top: 20px;
+    font-size: 1rem;
+    font-weight: 300;
+    color: rgba(255, 255, 255, 0.404);
+}
+/* ============================ TABLE-2 ============================ */
+#table2 .title h1{
+    margin-bottom: 50px;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 800;
+    font-size: 2rem;
+    color: var(--color-primary);
+}
+#table2 .card{
+    display: grid;
+    grid-template-columns: repeat(2,auto);
+    padding: 40px;
+    gap: 50px;
+    margin: 50px 220px;
+    border-bottom: 1px solid;    
+}
+#table2 .card .crd{
+    border-radius: 20px;
+    padding: 40px ;
+    cursor: pointer;
+    background-color:var(--color-bg2);
+    box-shadow: 0 0 11px 2px black;
+    cursor: pointer;
+    text-align: center;
+    transition:transform 1s ease ;
+    transition:box-shadow 1s ease ;
+}
+#table2 .card .crd:hover{
+    box-shadow: 1rem 3rem 4rem rgba(0, 0, 0, 0.3);
+    transform: scale(1.1);
+}
+#table2 .card .crd i{
+    font-size: 70px;
+    color: rgb(30, 30, 34);
+    margin-bottom: 20px;
+}
+#table2 .card .crd h3{
+    color: rgb(30, 30, 34);
+    font-weight: bolder;
+    font-size: 25px;
+    letter-spacing: 1px;
+}
+#table2 .card .crd p{
+    margin-top: 20px;
+    font-size: 1rem;
+    font-weight: 300;
+    color: rgba(255, 255, 255, 0.404);
+}
